@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.Create.Crear">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="25dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:gravity="center"
+        >
+    </TextView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_gravity="center"
+        android:contentDescription="Imagen Paciente"
+        app:srcCompat="@drawable/ic_menu_camera" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etcIDP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/id"
+            android:inputType="number"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        >
+        <Spinner
+            android:id="@+id/snpnncDrP"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+        <Spinner
+            android:id="@+id/snpnncAreaP"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etcFecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/fechaIngreso"
+                android:inputType="date"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <ImageButton
+            android:id="@+id/ibtnFechaIp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_menu_camera"
+            android:contentDescription="Imagen Fecha"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etcEdad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edad"
+                android:inputType="date"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Peso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/peso"
+                android:inputType="date"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Estatura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/estatura"
+                android:inputType="date"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/btnLimpiar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Limpiar"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnGuardar"
+                android:text="@string/guardar"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

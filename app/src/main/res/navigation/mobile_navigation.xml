@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="android.app.hospitals9.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_Editar"
+        android:name="android.app.hospitals9.ui.Editar.EditarFragment"
+        android:label="@string/menu_Editar"
+        tools:layout="@layout/fragment_editar" />
+
+    <fragment
+        android:id="@+id/nav_Eliminar"
+        android:name="android.app.hospitals9.ui.Eliminar.EliminarFragment"
+        android:label="@string/menu_Eliminar"
+        tools:layout="@layout/fragment_eliminar" />
+    <fragment
+        android:id="@+id/nav_Create"
+        android:name="android.app.hospitals9.ui.Create.Crear"
+        android:label="@string/menu_Create"
+        tools:layout="@layout/crear_fragment" />
+    <fragment
+        android:id="@+id/nav_Listar"
+        android:name="android.app.hospitals9.ui.Listar.ListarFragment"
+        android:label="@string/menu_Listar"
+        tools:layout="@layout/listar_fragment" />
+
+
+</navigation>
